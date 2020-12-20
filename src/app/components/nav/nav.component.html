@@ -1,0 +1,27 @@
+<div class="hamburgerMenu" [ngClass]='{untransform:showMenu}' (click)="showMenu = !showMenu">
+  <div class=""><a href="#">Home</a></div>
+  <div class=""><a href="#">Friends</a></div>
+  <div class=""><a href="#">Calendar</a></div>
+  <div class=""><a href="#">Contact</a></div>
+  <div class=""><a href="#">{{showMenu}}</a></div>
+</div>
+<nav>
+  <div class="left navSideContainer" (click)="showMenu = !showMenu">
+    <div class="hamburger">
+      <span [ngClass]='{hamburgerBar1:showMenu}'></span>
+      <span [ngClass]='{hamburgerBar2:showMenu}'></span>
+      <span [ngClass]='{hamburgerBar3:showMenu}'></span>
+    </div>
+    <div class="hamburger-title">
+      sections
+    </div>
+  </div>
+  <div class="right navSideContainer">
+    <div class="nav-label">
+      <a href="#">login</a>
+    </div>
+    <div class="nav-label">
+      <a href="#">search</a>
+    </div>
+  </div>
+</nav>

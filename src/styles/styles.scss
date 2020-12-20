@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400');
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  color: #fffdd0;
+  //background-color: $mainBlue;
+  background-color: #001540;
+  //font-family: $mainFontStyle;
+  font-family: 'Dosis', sans-serif;
+  font-size: $mainFontSize;
+}
