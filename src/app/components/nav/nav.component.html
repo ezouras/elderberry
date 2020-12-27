@@ -1,4 +1,4 @@
-<div class="hamburgerMenu" [ngClass]='{untransform:showMenu}' (click)="showMenu = !showMenu">
+<div class="drawerMenu" [ngClass]='{untransform:showMenu}' (click)="showMenu = !showMenu">
   <div class=""><a href="#">Home</a></div>
   <div class=""><a href="#">Friends</a></div>
   <div class=""><a href="#">Calendar</a></div>
@@ -6,14 +6,16 @@
   <div class=""><a href="#">{{showMenu}}</a></div>
 </div>
 <nav>
-  <div class="left navSideContainer" (click)="showMenu = !showMenu">
-    <div class="hamburger">
-      <span [ngClass]='{hamburgerBar1:showMenu}'></span>
-      <span [ngClass]='{hamburgerBar2:showMenu}'></span>
-      <span [ngClass]='{hamburgerBar3:showMenu}'></span>
-    </div>
-    <div class="hamburger-title">
-      sections
+  <div class="navSideContainer">
+    <div class="sectionsButton" (click)="showMenu = !showMenu">
+      <div class="hamburgerMenu">
+        <span class="hamburgerBar" [ngClass]='{hamburgerBar1:showMenu}'></span>
+        <span class="hamburgerBar" [ngClass]='{hamburgerBar2:showMenu}'></span>
+        <span class="hamburgerBar" [ngClass]='{hamburgerBar3:showMenu}'></span>
+      </div>
+      <div class="sectionsButtonTitle">
+        sections
+      </div>
     </div>
   </div>
   <div class="right navSideContainer">

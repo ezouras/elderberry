@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  showMenu$: Subject<boolean> = new Subject<boolean>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  clickedHome() {
+    this.showMenu$.next(false);
   }
 
 }
