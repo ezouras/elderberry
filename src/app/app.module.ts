@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { WelcomeBackComponent } from './welcome-back/welcome-back.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ComebackSoonComponent } from './comeback-soon/comeback-soon.component';
+import { NmFriendsComponent } from './nm-friends/nm-friends.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavComponent } from './components/nav/nav.component';
     HomeComponent,
     WelcomeComponent,
     WelcomeBackComponent,
-    NavComponent
+    NavComponent,
+    ComebackSoonComponent,
+    NmFriendsComponent
   ],
   imports: [
     BrowserModule,

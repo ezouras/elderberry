@@ -8,12 +8,15 @@ import { Observable, Subscription } from 'rxjs';
 export class NavComponent implements OnInit, OnDestroy {
   showMenu: boolean = false;
   private showMenuSubscription: Subscription;
-  @Input() showMenu$: Observable<void>;
+  @Input() showMenu$: Observable<boolean>;
 
   constructor() { }
 
   ngOnInit() {
-    this.showMenuSubscription = this.showMenu$.subscribe((dontShow) => this.showMenu = dontShow);
+    this.showMenuSubscription = this.showMenu$.subscribe((dontShow) => {
+      if (dontShow)
+        this.showMenu = dontShow
+    });
 
   }
 

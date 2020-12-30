@@ -1,0 +1,62 @@
+@import "variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+  }
+
+  .newFriends {
+    background: $teal;
+
+    .newFriendsDialogue {
+      width: 50%;
+
+      .nfdInfo {
+        text-align: center;
+        font-size: 0.75rem;
+      }
+    }
+
+    .newFriendsPicture {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .oldFriends {
+    background: $plum;
+
+    .oldFriendsPicture {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .oldFriendsDialogue {
+      width: 50%;
+
+      .ofdtitle {
+        text-align: center;
+      }
+
+      .ofdInfo {
+        text-align: center;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.forPadding {
+  padding: 1rem;
+}

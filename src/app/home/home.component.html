@@ -1,10 +1,14 @@
 <app-nav [showMenu$]="showMenu$.asObservable()"></app-nav>
 <div class="homeContainer" (click)="clickedHome()">
-  <div class="welcomeTitle">
-    <span class="cursiveLetter">W</span>elcome
-    <span class="cursiveLetter">E</span>lderberry!
-  </div>
   <div class="mainSeniorGathering">
     <img src="../assets/pictures/zoomMeeting1.png" alt="">
   </div>
+  <div class="elderberryFriends">
+    <div class="join">
+      Join The Community!
+    </div>
+  </div>
 </div>
+<app-calendar-of-events></app-calendar-of-events>
+<app-nm-friends></app-nm-friends>
+<app-comeback-soon></app-comeback-soon>
